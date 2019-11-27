@@ -1,4 +1,4 @@
-# Analiza rodnosti in umrljivosti v Sloveniji
+# Analiza samomorov v Evropi
 ## Klara Penko
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
@@ -8,7 +8,14 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Tematika
 
-V projektu bom analizirala kako različni dejavniki vplivajo na rodnost in umrljivost slovenskega prebivalstva skozi leta.
+V projektu bom analizirala, kako različni dejavniki vplivajo na samomore v posameznih evropskih državah. Analizirala bom vplive dejavnikov kot so, količina ljudi na robu revščine, stopnja zločinov, spolne zlorabe in ločitve.
+Cilj naloge je prikazati, kateri dejavniki najbolj vplivajo in kako se je, če se je spreminjala stopnja samomorov glede na ozaveščanje različnih organizacij o duševnih boleznih. Podatke pa bom iskala na Eurostatu(European statistical office).
+
+1. tabela
+2. tabela
+3. tabela
+4. tabela
+
 
 ## Program
 
