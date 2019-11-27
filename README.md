@@ -9,7 +9,6 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 ## Tematika
 
 V projektu bom analizirala, kako različni dejavniki vplivajo na samomore v posameznih evropskih državah.Osredotočila se bom na leta med 2009 in 2018. V posameznih državah bom analizirala vplive naslednjih dejavnikov:
-- število samomorov
 - količina tedenskih delovnih ur,
 - spolne zlorabe,
 - zločin, nasilje in vandalizem,
