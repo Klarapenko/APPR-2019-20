@@ -1,5 +1,5 @@
 # Analiza samomorov v Evropi
-## Klara Penko
+### Klara Penko
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
