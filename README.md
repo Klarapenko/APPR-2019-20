@@ -9,22 +9,36 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 ## Tematika
 
 V projektu bom analizirala, kako različni dejavniki vplivajo na samomore v posameznih evropskih državah.Osredotočila se bom na leta med 2009 in 2018. V posameznih državah bom analizirala vplive naslednjih dejavnikov:
-- količina ljudi na robu revščine,
+- število samomorov
 - količina tedenskih delovnih ur,
 - spolne zlorabe,
-- zločin, nasilje in vandalizem v bližini,
+- zločin, nasilje in vandalizem,
 - ločitve,
-_ dolgovi
-
+- dolgovi
 
 
 Cilj naloge je prikazati, kateri dejavniki bi lahko najbolj vplivali na količino samomorov in kako se količina samomorov v posameznih državah z leti spreminja.
 Podatke pa bom iskala na Eurostatu(European statistical office).
 
-1. tabela: 
-2. tabela
-3. tabela
-4. tabela
+
+1. tabela: število samomorov, posameznih držav, po letih https://ec.europa.eu/eurostat/databrowser/view/tps00122/default/table?lang=en 
+
+2. tabela: povprečna količina tedenskih delovnih ur
+ https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=lfsa_ewhun2&lang=en
+ 
+3. tabela: število spolnih zlorab
+https://appsso.eurostat.ec.europa.eu/nui/submitViewTableAction.do  
+
+4. tabela: število zločinov
+https://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-056146_QID_3DA2747E_UID_-3F171EB0&layout=TIME,C,X,0;GEO,L,Y,0;HHTYP,L,Z,0;INCGRP,L,Z,1;UNIT,L,Z,2;INDICATORS,C,Z,3;&zSelection=DS-056146UNIT,PC;DS-056146INCGRP,TOTAL;DS-056146HHTYP,TOTAL;DS-056146INDICATORS,OBS_FLAG;&rankName1=HHTYP_1_2_-1_2&rankName2=UNIT_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=INCGRP_1_2_-1_2&rankName5=TIME_1_0_0_0&rankName6=GEO_1_0_0_1&sortR=ASC_-1_FIRST&sortC=ASC_-1_FIRST&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=ROLLING&time_most_recent=false&lang=EN&cfo=%23%23%23%2C%23%23%23.%23%23%23&lang=en
+
+5. tabela: število ločitev
+https://ec.europa.eu/eurostat/databrowser/view/tps00206/default/table?lang=en
+
+6. tabela: količin dolgov
+https://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-056354_QID_6531C8BB_UID_-3F171EB0&layout=TIME,C,X,0;GEO,L,Y,0;HHTYP,L,Z,0;INCGRP,L,Z,1;UNIT,L,Z,2;INDICATORS,C,Z,3;&zSelection=DS-056354INCGRP,TOTAL;DS-056354INDICATORS,OBS_FLAG;DS-056354UNIT,PC;DS-056354HHTYP,TOTAL;&rankName1=HHTYP_1_2_-1_2&rankName2=UNIT_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=INCGRP_1_2_-1_2&rankName5=TIME_1_0_0_0&rankName6=GEO_1_0_0_1&sortR=ASC_-1_FIRST&sortC=ASC_-1_FIRST&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=ROLLING&time_most_recent=false&lang=EN&cfo=%23%23%23%2C%23%23%23.%23%23%23&lang=en 
+
+
 
 
 ## Program
