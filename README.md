@@ -8,10 +8,20 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Tematika
 
-V projektu bom analizirala, kako različni dejavniki vplivajo na samomore v posameznih evropskih državah. Analizirala bom vplive dejavnikov kot so, količina ljudi na robu revščine, stopnja zločinov, spolne zlorabe in ločitve.
-Cilj naloge je prikazati, kateri dejavniki najbolj vplivajo in kako se je, če se je spreminjala stopnja samomorov glede na ozaveščanje različnih organizacij o duševnih boleznih. Podatke pa bom iskala na Eurostatu(European statistical office).
+V projektu bom analizirala, kako različni dejavniki vplivajo na samomore v posameznih evropskih državah.Osredotočila se bom na leta med 2009 in 2018. V posameznih državah bom analizirala vplive naslednjih dejavnikov:
+- količina ljudi na robu revščine,
+- količina tedenskih delovnih ur,
+- spolne zlorabe,
+- zločin, nasilje in vandalizem v bližini,
+- ločitve,
+_ dolgovi
 
-1. tabela
+
+
+Cilj naloge je prikazati, kateri dejavniki bi lahko najbolj vplivali na količino samomorov in kako se količina samomorov v posameznih državah z leti spreminja.
+Podatke pa bom iskala na Eurostatu(European statistical office).
+
+1. tabela: 
 2. tabela
 3. tabela
 4. tabela
