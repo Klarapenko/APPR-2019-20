@@ -36,6 +36,12 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 
 ```{r uvoz, echo=FALSE, message=FALSE}
 source("uvoz/uvoz.r", encoding="UTF-8")
+source("uvoz/količina_dolgov.R", encoding="UTF-8")
+source("uvoz/stevilo_locitev.R", encoding="UTF-8")
+source("uvoz/stevilo_samomorov.R", encoding="UTF-8")
+source("uvoz/stevilo_zlorab.R", encoding="UTF-8")
+source("uvoz/stevilo_zločinov.R", encoding="UTF-8")
+source("uvoz/tedenske_delovne_ure.R", endcoding="UTF-8")
 ```
 
 Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
