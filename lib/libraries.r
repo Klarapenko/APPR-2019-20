@@ -14,8 +14,7 @@ library("openxlsx")
 library(tmap)
 
 library(ggplot2)
-library(dplyr)
-library(readr)
+
 
 # Uvozimo funkcije za pobiranje in uvoz zemljevida.
 source("lib/uvozi.zemljevid.r", encoding="UTF-8")

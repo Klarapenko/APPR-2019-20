@@ -11,5 +11,7 @@ SAMOMORI$leto <- parse_integer(SAMOMORI$leto)
 
 samomori <- gather(SAMOMORI, -država, key=leto, value =vrednost , na.rm = TRUE)
 
-samomori.vsote <- samomori %>% group_by(leto) %>% summarise(vsota=sum(vrednost))
+samomori$leto <- parse_integer(samomori$leto)
+
+samomori.vsi<- samomori %>% group_by(leto) %>% summarise(vsota=sum(vrednost))
 

@@ -11,7 +11,8 @@
 # Izračunamo povprečno velikost družine
 #povprecja <- druzine %>% group_by(obcina) %>%
 #  summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
+samomori.vsi<- samomori %>% group_by(leto) %>% summarise(vsota=sum(vrednost))
 
-g1 <- ggplot(data = samomori.vsote,aes(x=leto, y=vsota)) + geom_line()+ ggtitle("Število samomorov v celotni Evropi po letih") 
+g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_line()+  ggtitle("Število samomorov v celotni Evropi po letih")
 
-                  
+                
