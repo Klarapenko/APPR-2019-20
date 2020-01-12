@@ -34,12 +34,8 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 ```{r uvoz, echo=FALSE, message=FALSE}
 source("uvoz/uvoz.r", encoding="UTF-8")
-source("uvoz/količina_dolgov.R", encoding="UTF-8")
-source("uvoz/stevilo_locitev.R", encoding="UTF-8")
-source("uvoz/stevilo_samomorov.R", encoding="UTF-8")
-source("uvoz/stevilo_zlorab.R", encoding="UTF-8")
-source("uvoz/stevilo_zločinov.R", encoding="UTF-8")
-source("uvoz/tedenske_delovne_ure.R", endcoding="UTF-8")
+source("uvoz/moji_uvozi.r", encoding="UTF-8")
+
 ```
 
 Podatke sem uvozila iz Eurostata  v obliki CSV in HTML. Podatki so zbrani v petih tabelah v obliki *tidy data*.
