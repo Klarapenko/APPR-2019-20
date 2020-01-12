@@ -33,7 +33,6 @@ source("lib/rstudio.r", encoding="UTF-8")
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/uvoz.r", encoding="UTF-8")
 source("uvoz/moji_uvozi.r", encoding="UTF-8")
 
 ```
@@ -58,7 +57,6 @@ Podatke sem uvozila iz Eurostata  v obliki CSV in HTML. Podatki so zbrani v peti
 source("vizualizacija/vizualizacija.r", encoding="UTF-8")
 ```
 
-Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
 
 
 
@@ -70,6 +68,6 @@ Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
 
 ***
 
-```{r shiny, echo=FALSE}
-shinyAppDir("shiny", options=list(width="100%", height=600))
-```
+#```{r shiny, echo=FALSE}
+#shinyAppDir("shiny", options=list(width="100%", height=600))
+#```
