@@ -5,6 +5,9 @@ library(tidyr)
 library(shiny)
 library(readr)
 library(dplyr)
+library(mosaic)
+library(farver)
+
 
 
 
@@ -16,5 +19,5 @@ library(tmap)
 library(ggplot2)
 
 
-# Uvozimo funkcije za pobiranje in uvoz zemljevida.
+ #Uvozimo funkcije za pobiranje in uvoz zemljevida.
 source("lib/uvozi.zemljevid.r", encoding="UTF-8")

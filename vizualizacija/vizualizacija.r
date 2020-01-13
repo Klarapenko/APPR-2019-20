@@ -13,5 +13,5 @@
 #  summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
 
 
-g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_polygon()+  ggtitle("Število samomorov v celotni Evropi po letih")
+g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_polygon()+ ggtitle("Število samomorov v celotni Evropi po letih")
 
