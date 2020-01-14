@@ -2,7 +2,7 @@
 library(readr)
 library(tidyr)
 library(dplyr)
-
+#=======================================================================================================================================
 
 #ŠTEVILO SAMOMOROV
 
@@ -15,9 +15,21 @@ SAMOMORI <- read_csv("podatki/steviloo_samomorovv.csv",na=":",skip=1,
 
 samomori.vsi<- SAMOMORI %>% group_by(leto) %>% summarise(vsota=sum(vrednost, na.rm=TRUE))
 
+#=======================================================================================================================================
 
 
 
+#STEVILO SAMOMOROV PO SPOLU
+S_SAMOMORI <- read_csv("podatki/st.samomorov_po_spolu.csv", na=":",skip=1,
+                       col_names=c("spol", "država", "neki1", "neki2", "starost","neki3", "leto", "vrednost","opombe"),
+                       locale = locale(encoding="windows-1250")) %>%
+    select(-"neki1", -"neki2", -"neki3", -"starost", -"opombe")
+
+samomori.zenske.moski.po.letih <- S_SAMOMORI %>% group_by(spol, leto) %>% summarise(vsota=sum(vrednost, na.rm=TRUE))
+
+
+
+#=======================================================================================================================================
 #TEDENSKE DELOVNE URE
 
 URE <- read_csv("podatki/tedenske_delovne_ure.csv",na=":",skip=1,
@@ -27,7 +39,7 @@ URE <- read_csv("podatki/tedenske_delovne_ure.csv",na=":",skip=1,
 
 
 
-
+#=======================================================================================================================================
 
 
 
@@ -41,7 +53,7 @@ ZLOCINI <- read_csv("podatki/stevilo_zlocinov.csv",na=":",skip=1,
 
 
 
-
+#=======================================================================================================================================
 
 
 
@@ -56,7 +68,7 @@ ZLORABE<- read_csv("podatki/st.spolnih_zlorab.csv",na=":",skip=1,
 
 
 
-
+#=======================================================================================================================================
 
 
 
