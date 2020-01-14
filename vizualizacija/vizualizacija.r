@@ -15,3 +15,4 @@
 
 g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_point() + ggtitle("Število samomorov v celotni Evropi po letih") + theme(panel.background=element_rect(fill="grey"))
 
+g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota)) + geom_point() + ggtitle("samomori v celotni Evropi, ločeni po spolu") 
