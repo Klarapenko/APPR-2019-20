@@ -14,6 +14,7 @@ SAMOMORI <- read_csv("podatki/steviloo_samomorovv.csv",na=":",skip=1,
 
 
 samomori.vsi<- SAMOMORI %>% group_by(leto) %>% summarise(vsota=sum(vrednost, na.rm=TRUE))
+samomori.drzave <- SAMOMORI %>% group_by(država, leto) %>% summarise(vsota=sum(vrednost, na.rm = TRUE))
 
 #=======================================================================================================================================
 
