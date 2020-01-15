@@ -18,8 +18,6 @@ samomori.drzave <- SAMOMORI %>% group_by(država, leto) %>% summarise(vsota=sum(
 
 #=======================================================================================================================================
 
-
-
 #STEVILO SAMOMOROV PO SPOLU
 S_SAMOMORI <- read_csv("podatki/st.samomorov_po_spolu.csv", na=":",skip=1,
                        col_names=c("spol", "država", "neki1", "neki2", "starost","neki3", "leto", "vrednost","opombe"),
@@ -34,23 +32,29 @@ samomori.zenske.moski.po.letih <- S_SAMOMORI %>% group_by(spol, leto) %>% summar
 #TEDENSKE DELOVNE URE
 
 URE <- read_csv("podatki/tedenske_delovne_ure.csv",na=":",skip=1,
-                col_names=c("leto","država","spol","delovni čas", "status", "neki1","neki2","povprečno ur", "opombe"),
+                col_names=c("leto","država","spol","delovni čas", "status", "neki1","neki2","ure", "opombe"),
                 locale=locale(encoding="windows-1250")) %>%
   select(-"spol",-"neki1",-"delovni čas",-"opombe",-"status",-"neki2")
 
+povprecje.ur.drzave <- URE %>% group_by(država) %>% summarise(Povprecje=sum(ure)/(10))
+
+zemljevid <- uvozi.zemljevid("http://maps.googleapis.com/maps/api/staticmap?center=Europe&zoom=4&size=640x640&scale=2&maptype=terrain&language=en-EN&sensor=false", encoding = "UTF-8")
+
+
+
+names(zemljevid)
 
 
 #=======================================================================================================================================
 
-
-
-
 #ŠTEVILO ZLOČINOV
 
 ZLOCINI <- read_csv("podatki/stevilo_zlocinov.csv",na=":",skip=1,
-                    col_names=c("leto","država","neki1","neki2", "enota", "vrednost(v procentih)", "opombe"),
+                    col_names=c("leto","država","neki1","neki2", "enota", "vrednosti", "opombe"),
                     locale=locale(encoding="windows-1250")) %>%
   select(-"neki1",-"enota",-"opombe",-"neki2")
+
+zlocini.po.drzavah <- ZLOCINI %>% group_by(država)
 
 
 
