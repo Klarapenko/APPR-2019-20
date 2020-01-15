@@ -36,11 +36,10 @@ URE <- read_csv("podatki/tedenske_delovne_ure.csv",na=":",skip=1,
                 locale=locale(encoding="windows-1250")) %>%
   select(-"spol",-"neki1",-"delovni čas",-"opombe",-"status",-"neki2")
 
-povprecje.ur.drzave <- URE %>% group_by(država) %>% summarise(Povprecje=sum(ure)/(10))
-
-zemljevid <- uvozi.zemljevid("http://maps.googleapis.com/maps/api/staticmap?center=Europe&zoom=4&size=640x640&scale=2&maptype=terrain&language=en-EN&sensor=false", encoding = "UTF-8")
+povprecje.ur.drzave <- URE %>% group_by(država) %>% summarise(povprecje=sum(ure)/(10))
 
 
+zemljevid <- uvozi.zemljevid("http://maps.googleapis.com/maps/api/geocode/json?address=Europe&sensor=false", encoding = "UTF-8")
 
 names(zemljevid)
 

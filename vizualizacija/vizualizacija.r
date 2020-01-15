@@ -17,7 +17,7 @@ g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_point() + ggtitle
 
 g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=spol)) + geom_line() + ggtitle("samomori v celotni Evropi, ločeni po spolu") 
 
-#g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednosti, color=država)) + geom_line() + ggtitle("odstotek samomorov")
+g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednosti, color=država)) + geom_line() + ggtitle("odstotek samomorov")
 
-#zemljevid1<- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Povprečje") + tm_layout(title="Povprečna mesečna plača glede na regijo")
+z1<- tm_shape(merge(zemljevid, povprecne.delovne.ure.po.drzavah, by.x="", by.y="država" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto")
 
