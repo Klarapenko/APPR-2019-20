@@ -19,5 +19,5 @@ g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=sp
 
 g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednosti, color=država)) + geom_line() + ggtitle("odstotek samomorov")
 
-z1<- tm_shape(merge(zemljevid, povprecne.delovne.ure.po.drzavah, by.x="", by.y="država" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto")
+#z1<- tm_shape(merge(zemljevid, povprecne.delovne.ure.po.drzavah, by.x="", by.y="država" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto")
 
