@@ -13,11 +13,24 @@
 #  summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
 
 
-g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_point() + ggtitle("Število samomorov v celotni Evropi po letih") + theme(panel.background=element_rect(fill="grey"))
+g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_point() + 
+  ggtitle("Število samomorov v celotni Evropi po letih") + 
+  theme(panel.background=element_rect(fill="grey"))
 
-g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=spol)) + geom_line() + ggtitle("samomori v celotni Evropi, ločeni po spolu") 
+g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=spol)) +
+  geom_line() + ggtitle("samomori v celotni Evropi, ločeni po spolu") 
 
-g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednosti, color=država)) + geom_line() + ggtitle("odstotek samomorov")
+g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednost, color=država)) + 
+  geom_line() + ggtitle("odstotek samomorov")
 
-#z1<- tm_shape(merge(zemljevid, povprecne.delovne.ure.po.drzavah, by.x="", by.y="država" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto")
+#z1<- tm_shape(merge(zemljevid, povprecje.ur.drzave, by.x="", by.y="država" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto")
 
+
+#z2 <- tm_shape(merge(evropskedrzave, povprecje.ur.drzave, by.x="drzava", by.y="povprecje"))+
+ # tm_polygons("povprecje",title="Povprecje") + tm_layout(title="Povprečno število tedenskih ur posamezne države na leto") 
+
+
+
+z1 <- tm_shape(evropskedrzave) + tm_polygons(border.col = "black") + tm_legend(show=FALSE)
+
+# + tmap_options(categories=ncol(names)

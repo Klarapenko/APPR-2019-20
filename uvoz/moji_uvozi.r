@@ -42,16 +42,20 @@ samomori.zenske.moski.po.letih <- S_SAMOMORI %>% group_by(spol, leto) %>% summar
 #TEDENSKE DELOVNE URE
 
 URE <- read_csv("podatki/tedenske_delovne_ure.csv",na=":",skip=1,
-                col_names=c("leto","država","spol","delovni čas", "status", "neki1","neki2","ure", "opombe"),
+                col_names=c("leto","drzava","spol","delovni čas", "status", "neki1","neki2","ure", "opombe"),
                 locale=locale(encoding="windows-1250")) %>%
   select(-"spol",-"neki1",-"delovni čas",-"opombe",-"status",-"neki2")
 
-povprecje.ur.drzave <- URE %>% group_by(država) %>% summarise(povprecje=sum(ure)/(10))
+povprecje.ur.drzave <- URE %>% group_by(drzava) %>% summarise(povprecje=sum(ure)/(10))
 
 
-#zemljevid <- uvozi.zemljevid("http://maps.googleapis.com/maps/api/geocode/json?address=Europe&sensor=false", encoding = "UTF-8")
 
-#names(zemljevid)
+data("World")
+svet<- tm_shape(World) +tm_polygons(border.col = "black")
+
+evropskedrzave <- World%>%filter(continent == "Europe")
+names(evropskedrzave)
+
 
 
 #=======================================================================================================================================
@@ -97,7 +101,7 @@ DOLGOVI<- read_csv("podatki/dolgovi.csv",na=":",skip=1,
 
 
 #=======
-#to še nvem če bom, prI uvozu kratice držav..... nakoncu preglej!
+#to še nevem če bom, prI uvozu kratice držav..... nakoncu preglej!
 #STOPNJA LOCITEV (je razmerje med številom razvez med letom in povprečnim prebivalstvom v tem letu. Vrednost je izražena na 1000 oseb.)
 #LOCITVE <- read_csv("podatki/stevilo_locitev.csv",na=":",skip=1,
  #                   col_names=c("neki1","neki2","drzava","2006", "2007", "2008","2009","2010", "2011", "2012","2013", "2014","2015", "2016", "2017"),
