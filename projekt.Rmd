@@ -42,7 +42,7 @@ Podatke sem uvozila iz Eurostata  v obliki CSV in HTML. Podatki so zbrani v peti
 1. 'Število samomorov' - številski podatki o količini samomorov v za posamezna leta v vsaki izmed evropskih držav. Podatki so uvoženi iz CSV-ja.
  - 'leto' - meritev: leto (število)
  - 'država' - spremenljivke: ime države(neurejen faktor)
- - 'vrednost' - meritev: količina vseh oseb, ki so si vzele življenje (število)
+ - 'vrednost' - meritev: število oseb, ki so si vzele življenje (število)
  
 2. 
  
