@@ -39,13 +39,18 @@ source("uvoz/moji_uvozi.r", encoding="UTF-8")
 
 Podatke sem uvozila iz Eurostata  v obliki CSV in HTML. Podatki so zbrani v petih tabelah v obliki *tidy data*.
 
-1. 'Število samomorov' - številski podatki o količini samomorov v za posamezna leta v vsaki izmed evropskih držav. Podatki so uvoženi iz CSV-ja.
+1. 'Število samomorov' - številski podatki o samomorih za posamezna leta v vsaki izmed evropskih držav. Podatki so uvoženi iz CSV-ja.
  - 'leto' - meritev: leto (število)
  - 'država' - spremenljivke: ime države(neurejen faktor)
  - 'vrednost' - meritev: število oseb, ki so si vzele življenje (število)
  
-2. 
- 
+2. 'Delež samomorov' - procentualni podatki o deležu samomorov, med vsemi vzroki smrti, v vsaki izmed evropskih držav.
+Podatki so uvoženi iz CSV-ja.
+- 'leto' - meritev: leto (število)
+- 'drzava' - spremenljivke: ime države (neurejen faktor)
+- 'vrednost' - meritev: delež samomorv od vseh vzrokov smrti (število)
+
+3. 
 
 
 
