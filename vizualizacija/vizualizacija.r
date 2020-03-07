@@ -15,13 +15,16 @@
 #====================================================================================================
 #=======GRAFI========================================================================================
 #====================================================================================================
+#graf števila vseh samomorov po letih
 g1 <- ggplot(data = samomori.vsi, aes(x=leto, y=vsota)) + geom_point() + 
   ggtitle("Število samomorov v celotni Evropi po letih") + 
   theme(panel.background=element_rect(fill="grey"))
 
+#graf samomorov ločenih na ženske in moške po letih
 g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=spol)) +
   geom_line() + ggtitle("samomori v celotni Evropi, ločeni po spolu") +
   theme(panel.background=element_rect(fill="grey"))
+
 
 g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednost, color=drzava)) + 
   geom_line() + ggtitle("odstotek samomorov")

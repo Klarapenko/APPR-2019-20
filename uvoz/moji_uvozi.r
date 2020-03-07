@@ -29,7 +29,7 @@ P_SAMOMORI <- read_csv("podatki/samomorii.csv",skip =1, na = ":",
   select(-"stolpec1", - "stolpec2", - "stolpec3", -"opombe", -"stolpec4")
 
 P_SAMOMORI$drzava[P_SAMOMORI$drzava == 'Germany (until 1990 former territory of the FRG)'] <- 'Germany'
-
+P_SAMOMORI$drzava[P_SAMOMORI$drzava == "Czechia"] <- "Czech Rep."
 #===============================================================================
 #STEVILO SAMOMOROV PO SPOLU
 S_SAMOMORI <- read_csv("podatki/st.samomorov_po_spolu.csv", na=":",skip=1,
