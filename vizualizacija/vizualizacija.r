@@ -25,8 +25,13 @@ g2 <- ggplot(data=samomori.zenske.moski.po.letih, aes(x=leto, y=vsota , color=sp
   geom_line() + ggtitle("samomori v celotni Evropi, ločeni po spolu") +
   theme(panel.background=element_rect(fill="grey"))
 
+#število tedenskih delovnih ur v posamezni državi 2009-2018:
 
-g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednost, color=drzava)) + 
+g4 <- ggplot(data=URE, aes(x=leto, y=ure, color=drzava)) +
+  geom_line() + ggtitle("Povprecno stevilo tedenskih delovnih ur ")
+
+
+g3 <- ggplot(data=ZLOCINI, aes(x=leto, y=vrednost, color=drzava, filter(latvia))) + 
   geom_line() + ggtitle("odstotek samomorov")
 
 #g4 <- ggplot(data=povprecje.zadolzenih.v.posamezni.drzavi ,aes(x=povprecje) ) + geom_bar(mapping = NULL,
@@ -69,6 +74,17 @@ zemljevid.evrope <- function(){
 }
 zemljevid.evrope()
 
+#kolikšen procent vseh smrti so predstavljali samomori v letu 2011:
+zemljevid.evrope2 <- function(){
+  evropa <- World %>% filter (continent == 'Europe')
+  Samomori <- P_SAMOMORI
+  Samomori <- P_SAMOMORI %>% filter (leto == 2011) %>% select('drzava', 'vrednost')
+  podatki <- merge(y = Samomori,x = evropa, by.x='name', by.y = 'drzava')
+  evropa <- tm_shape(podatki) + tm_polygons('vrednost') 
+  tmap_mode('view')
+  return(evropa)
+}
+zemljevid.evrope2()
 
 
 

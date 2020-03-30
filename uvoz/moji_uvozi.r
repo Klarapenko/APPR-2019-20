@@ -59,6 +59,8 @@ URE$drzava[URE$drzava == 'Germany (until 1990 former territory of the FRG)'] <- 
 
 povprecje.ur.drzave <- URE %>% group_by(drzava) %>% summarise(povprecje=sum(ure)/(10))
 
+ure.latvia <- URE %>% filter(latvia)
+
 #=====Zemljevid evrope=====
 
 #data("World")
